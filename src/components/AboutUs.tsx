@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaGlobe } from 'react-icons/fa';
+import LoadingSpinner from './LoadingSpinner';
 
 const AboutUs: React.FC = () => {
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  const handleImageLoad = () => {
+    setImageLoaded(true);
+  };
+
   return (
     <section id="about-us" className="about-us">
       <div className="container">
@@ -13,7 +20,13 @@ const AboutUs: React.FC = () => {
           <p>Fornecer ensino de inglês de alta qualidade, acessível e eficaz, capacitando os indivíduos a se destacarem em um mundo globalizado.</p>
         </div>
         <div className="about-image">
-          <img src="./hero.png" alt="About Us" />
+          {!imageLoaded && <LoadingSpinner />}
+          <img 
+            src="./hero.png" 
+            alt="About Us" 
+            onLoad={handleImageLoad}
+            style={{ display: imageLoaded ? 'block' : 'none' }}
+          />
         </div>
       </div>
     </section>
