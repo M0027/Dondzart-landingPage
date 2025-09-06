@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
 import EnrollmentForm from './components/EnrollmentForm';
+import WhatsappBotton from './components/whatshapBottom';
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -30,6 +31,7 @@ function App() {
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <EnrollmentForm onClose={closeModal} />
       </Modal>
+      <WhatsappBotton/>
     </div>
   );
 }
