@@ -11,7 +11,8 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="container">
-        <div className="logo">Donzarte</div>
+        {/* <div className="logo">Donzarte</div> */}
+        <img src='./logo.jpg' className='logo' />
         <button className="menu-toggle" onClick={toggleMenu}>
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>

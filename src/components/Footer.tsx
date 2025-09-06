@@ -11,7 +11,7 @@ const Footer: React.FC<FooterProps> = ({ openModal }) => {
       <div className="container">
         <div className="footer-top">
           <div className="footer-info">
-            <h3>Donzarte English Center</h3>
+            <h3>Dondzart English Center</h3>
             <p>Seu parceiro para a fluência em inglês em Moçambique.</p>
             <a href="#" onClick={openModal} className="btn-primary">Torne-se Aluno</a>
           </div>
@@ -30,7 +30,7 @@ const Footer: React.FC<FooterProps> = ({ openModal }) => {
           <div className="footer-contact">
             <h4>Contacto</h4>
             <p>Endereço: BOANE-VILA, AV. DA NAMAACHA, RUA 1 DE MAIO, proximo ao bar das cota.</p>
-            <p>Email: dondzarte@gmail.com</p>
+            <p>Email: dondzart@gmail.com</p>
             <p>Telefone: +258 87181 8012/ 84 831 5615</p>
           </div>
           <div className="footer-social">
@@ -43,7 +43,7 @@ const Footer: React.FC<FooterProps> = ({ openModal }) => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Donzarte English Center. Todos os direitos reservados. By <span> Mauro De Assis</span> </p>
+          <p>&copy; {new Date().getFullYear()} Dondzart English Center. Todos os direitos reservados. By <span> Mauro De Assis</span> </p>
         </div>
       </div>
     </footer>

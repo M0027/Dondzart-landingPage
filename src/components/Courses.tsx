@@ -6,7 +6,7 @@ const Courses: React.FC = () => {
     <section id="courses" className="courses">
       <div className="container">
         <h2>Nossos Cursos de Inglês</h2>
-        <p className="section-description">No Centro Donzarte, oferecemos uma variedade de cursos de inglês projetados para o seu sucesso, desde iniciantes até níveis avançados.</p>
+        <p className="section-description">No Centro Dondzart, oferecemos uma variedade de cursos de inglês projetados para o seu sucesso, desde iniciantes até níveis avançados.</p>
         <div className="course-list">
           <div className="course-card">
             <h3><FaBookOpen /> Níveis 1 a 5</h3>

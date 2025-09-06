@@ -22,17 +22,17 @@ const EnrollmentForm: React.FC<EnrollmentFormProps> = ({ onClose }) => {
     e.preventDefault();
     console.log('Form Submitted:', formData);
     alert('Formulário enviado com sucesso! Entraremos em contacto brevemente.');
-
     setTimeout(()=>{
 
-      onClose(); // Close modal after submission
+     // onClose(); // Close modal after submission
       handleWhatsAppRedirect()
     },3000)
+
     // Here you would typically send data to a backend or handle it.
   };
 
   const handleWhatsAppRedirect = () => {
-    const message = `Olá Donzarte, gostaria de me inscrever. Meu nome é ${formData.name || '[Seu Nome]'}, tenho ${formData.age || '[Sua Idade]'} anos, meu contacto é ${formData.contact || '[Seu Contacto]'}. Tenho interesse no nível ${formData.level || '[Nível Desejado]'} e quero estudar inglês porque ${formData.reason || '[Seu Motivo]'}.`;
+    const message = `Olá Dondzart, gostaria de me inscrever. Meu nome é ${formData.name || '[Seu Nome]'}, tenho ${formData.age || '[Sua Idade]'} anos, meu contacto é ${formData.contact || '[Seu Contacto]'}. Tenho interesse no nível ${formData.level || '[Nível Desejado]'} e quero estudar inglês porque ${formData.reason || '[Seu Motivo]'}.`;
     const whatsappLink = `https://wa.me/258871818012?text=${encodeURIComponent(message)}`;
     window.open(whatsappLink, '_blank');
     onClose();

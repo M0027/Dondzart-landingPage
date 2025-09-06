@@ -25,8 +25,8 @@ const Hero: React.FC<HeroProps> = ({ openModal }) => {
           />
         </div>
         <div className="hero-content">
-          <h1>Aprenda Inglês com Donzarte: O Seu Caminho para a Fluência!</h1>
-          <p>Localizado em Maputo, Boane, o Centro de Cursos de Inglês Donzarte oferece programas abrangentes do Nível 1 ao 5. Prepare-se para um futuro global com nossas aulas dinâmicas e instrutores experientes. Também oferecemos cursos online via WhatsApp para a sua conveniência!</p>
+          <h1>Aprenda Inglês com Dondzart: O Seu Caminho para a Fluência!</h1>
+          <p>Localizado em Maputo, Boane, o Centro de Cursos de Inglês Dondzart oferece programas abrangentes do Nível 1 ao 5. Prepare-se para um futuro global com nossas aulas dinâmicas e instrutores experientes. Também oferecemos cursos online via WhatsApp para a sua conveniência!</p>
           <button className="btn-primary" onClick={openModal}>Torne-se Aluno</button>
         </div>
        

@@ -27,8 +27,9 @@ body {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
 }
 
 .nav ul {
@@ -532,6 +533,10 @@ body {
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+
+     &:active{
+      border: none;
+    }
   }
 }
 
@@ -562,4 +567,26 @@ body {
 
 span{
   color: #e66a00;
+}
+
+/* Spinner Styles */
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px; /* Adjust as needed */
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #f3f3f3; /* Light grey */
+  border-top: 5px solid #0F4C81; /* Professional Blue */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
