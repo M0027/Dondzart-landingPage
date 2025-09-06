@@ -641,23 +641,23 @@ span {
 
 @keyframes pulse {
   0% {
-    top:92vh;
+    top:90vh;
   }
   25% {
     /* top:0; */
-    top:87vh;
+    top:85vh;
   }
   50% {
-    top:92vh;
+    top:90vh;
     /* top :0; */
   }
 
   75% {
     /* top:0; */
-    top: 87vh;
+    top: 85vh;
   }
   100% {
     /* top:0; */
-    top: 92vh;
+    top: 90vh;
   }
 }
