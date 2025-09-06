@@ -8,7 +8,7 @@ import Testimonials from './components/Testimonials';
 import Footer from './components/Footer';
 import Modal from './components/Modal';
 import EnrollmentForm from './components/EnrollmentForm';
-import WhatsappBotton from './components/whatshapBottom';
+import WhatsappBotton from './components/WhatshapBottom';
 
 function App() {
   // const [count, setCount] = useState(0)
