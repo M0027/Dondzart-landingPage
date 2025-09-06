@@ -6,6 +6,12 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ openModal }) => {
+
+  const goToMauroInfo = ()=>{
+    const portifolio = `https://mauro-assis-cumbane.vercel.app`;
+    window.open(portifolio, '_blank');
+  }
+  
   return (
     <footer className="footer">
       <div className="container">
@@ -43,7 +49,7 @@ const Footer: React.FC<FooterProps> = ({ openModal }) => {
           </div>
         </div>
         <div className="footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Dondzart English Center. Todos os direitos reservados. By <span> Mauro De Assis</span> </p>
+          <p>&copy; {new Date().getFullYear()} Dondzart English Center. Todos os direitos reservados. By <span onClick={goToMauroInfo}> Mauro De Assis</span> </p>
         </div>
       </div>
     </footer>
